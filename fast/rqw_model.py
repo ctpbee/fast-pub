@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from ctpbee.constant import OrderData
 
 
 class Fuzzy(BaseModel):
@@ -16,3 +17,6 @@ class Cancel(Fuzzy):
 class Market(Fuzzy):
     typed: str
 
+
+class TradeLogin(Fuzzy):
+    pass

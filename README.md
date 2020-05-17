@@ -7,3 +7,6 @@ Python高性能交易行情网关 支持websocket.
 ## EEEEEE   
 目标：
 200个账户
+
+## 快速启动
+uvicorn fast:fast_api --reload
