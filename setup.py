@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='fast_pub',
     version="0.1",
-    description="异步分发行情交易处理中心",
+    description="异步行情交易处理中心",
     author='somewheve',
     long_description="高性能行情网关",
     author_email='somewheve@gmail.com',
@@ -12,7 +12,6 @@ setup(
     packages=[],
     install_requires=["ctpbee", "fastapi", "uvicorn"],
     platforms=["Windows", "Linux", "Mac OS-X"],
-
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
