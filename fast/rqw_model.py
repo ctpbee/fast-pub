@@ -19,4 +19,7 @@ class Market(Fuzzy):
 
 
 class TradeLogin(Fuzzy):
-    pass
+    CONNECT_INFO: dict
+    INTERFACE: str
+    TD_FUNC: bool
+    MD_FUNC: bool
