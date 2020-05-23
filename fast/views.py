@@ -6,7 +6,7 @@ from fast.response import RT
 
 @fast_api.post("/order/route")
 async def send_order(item: Order):
-    return RT.true_response(data=get_app(item.app_name).send_order(item), message="insert order successful")
+    return RT.true_response(data=get_app(item.app_name).send_order(item.order), message="insert order successful")
 
 
 @fast_api.post("/order/cancel")
@@ -32,5 +32,5 @@ async def add_trade(item: TradeLogin):
     """
     app = CtpBee(item.app_name, __name__)
     app.config.from_mapping(item)
-    app.start()
+    app.start(log_output=False)
     return RT.true_response(message="add trade successful")

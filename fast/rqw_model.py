@@ -7,7 +7,7 @@ class Fuzzy(BaseModel):
 
 
 class Order(Fuzzy):
-    pass
+    order: dict
 
 
 class Cancel(Fuzzy):
